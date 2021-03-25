@@ -18,7 +18,7 @@ public class SpringboothotelApplication {
     public void afterTheStart(){
         user User = new user();
         User.setLast_name("Ziomalandia");
-       // userMongoRepository.save(User);
+       // userMongoRepository.save(user);
         userMongoRepository.findAll().forEach(System.out::println);
     }
 }
