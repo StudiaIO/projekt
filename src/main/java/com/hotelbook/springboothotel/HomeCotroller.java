@@ -8,7 +8,7 @@ public class HomeCotroller {
     @GetMapping("/")
     public String homePage()
     {
-        return "Witaj w hotelu marmur";
+        return "Witaj w hotelu marmurr";
     }
 
 }
