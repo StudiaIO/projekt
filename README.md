@@ -2,20 +2,20 @@
 Aplikacja webowa hotelu "Marmur" umożliwiająca rejestrację/logowanie/składanie rezerwacji pokoi użytkownikowi.
 
 <h2>Frontend</h2>
--React.js
+-HTML/CSS
+- Javascript
+- Bootrsap
+
 <h2>Backend</h2>
 
--Java 16
+- MySql
+- php 7.0.3 
+- Amelia 
 
--Java Spring Boot 2.4.4
 
--Maven
-
--MongoDB
-<h2>Features that we currently work on</h2>
-
--Rejestracja/logowanie
-
--Dodawanie/usuwanie/aktualizowanie danych w bazie danych
-
--Dokonywanie rezerwacji pokoi hotelowych
+a ) Rejestracja i logowanie (User/Admin) 
+b) Zarządzanie danymi innych użytkowników przez administratora systemu (zmiana danych, usunięcie z systemu, nadanie roli moderatora/administratora)
+c) Dodawanie, edycja i usuwanie pokoi (admin, moderator) 
+d) Dodawanie, edycja i usuwanie własnych rezerwacji (user) 
+e)Rezerwowanie przez użytkownika 
+f)  Szyfrowanie haseł
