@@ -3,7 +3,7 @@
     <header id="head">
         <div class="container">
             <div class="row">
-                <h1 class="lead">Witaj w Hotelu Marmur</h1>
+                <h1 class="lead">Tanie noclegi</h1>
                 
                 <p><a class="btn btn-default btn-lg" role="button" href="{$conf->action_root}panel">Szukaj noclegu</a></p>
             </div>

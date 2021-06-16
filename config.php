@@ -8,10 +8,10 @@ $conf->app_root = '/projekt/public';   # project subfolder in domain (relative t
 
 # ---- Database config - values required by Medoo
 $conf->db_type = 'mysql';
-$conf->db_server = 'localhost';
+$conf->db_server = 'mysql-hostel.mysql.database.azure.com';
 $conf->db_name = 'hostel';
-$conf->db_user = 'root';
-$conf->db_pass = '';
+$conf->db_user = 'dbadmin@mysql-hostel';
+$conf->db_pass = 'zaq1@WSX';
 $conf->db_charset = 'utf8';
 
 # ---- Database config - optional values

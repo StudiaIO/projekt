@@ -1,12 +1,55 @@
-{extends file="main.tpl"}
-{block name=intro}
+<?php
+/* Smarty version 3.1.33, created on 2021-06-16 18:48:55
+  from 'C:\xampp\htdocs\projekt\app\views\RegisterView.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_60ca2b7757dd68_06538742',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '8cdc25903611454832eca4772752d1ab8ae5f9e7' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\projekt\\app\\views\\RegisterView.tpl',
+      1 => 1623862134,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_60ca2b7757dd68_06538742 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_loadInheritance();
+$_smarty_tpl->inheritance->init($_smarty_tpl, true);
+?>
+
+<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_43590874260ca2b77578e47_28097999', 'intro');
+$_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
+}
+/* {block 'intro'} */
+class Block_43590874260ca2b77578e47_28097999 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'intro' => 
+  array (
+    0 => 'Block_43590874260ca2b77578e47_28097999',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
     <header id="head" class="secondary"></header>
     <!-- container -->
     <div class="container">
 
         <ol class="breadcrumb">
-            <li><a href="{$conf->action_root}main">Strona główna</a></li>
-            <li class="active">{$page_title}</li>
+            <li><a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
+main">Strona główna</a></li>
+            <li class="active"><?php echo $_smarty_tpl->tpl_vars['page_title']->value;?>
+</li>
         </ol>
 
         <div class="row">
@@ -24,7 +67,8 @@
                            
                             <hr>
 
-                            <form action="{$conf->action_root}register" method="post">
+                            <form action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
+register" method="post">
                                 <div class="top-margin">
                                     <label>Adres email <span class="text-danger">*</span></label>
                                     <input type="email" class="form-control" name="email">
@@ -326,4 +370,8 @@
 
     </div>	<!-- /container -->
 
-{/block}
+<?php
+}
+}
+/* {/block 'intro'} */
+}

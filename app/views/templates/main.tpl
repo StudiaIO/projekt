@@ -47,8 +47,8 @@
 					<ul class="nav navbar-nav pull-right">
 						<li class="active"><a href="{$conf->action_root}main">Strona główna</a></li>
 						{if !core\RoleUtils::inRole("logged")}
-							<li><a href="{$conf->action_root}login">Zaloguj</a></li>
-							<li><a class="btn" href="{$conf->action_root}register">Rejestracja</a></li>
+							<li><a href="{$conf->action_root}login" name="loguj">Zaloguj</a></li>
+							<li><a class="btn" href="{$conf->action_root}register" name="rejestruj">Rejestracja</a></li>
 						{/if}
 						{if core\RoleUtils::inRole("logged")}
 							<li class="dropdown">
@@ -99,7 +99,6 @@
 
 					<div class="col-md-3 widget">
 						<h3 class="widget-title">Kontakt</h3>
-						<?php echo 'PHP version: ' . phpversion(); />
 						<div class="widget-body">
 						
 

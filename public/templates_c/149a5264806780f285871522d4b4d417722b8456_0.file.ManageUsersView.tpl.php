@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2021-06-10 00:25:20
-  from 'G:\xampp\htdocs\projekt\app\views\ManageUsersView.tpl' */
+/* Smarty version 3.1.33, created on 2021-06-16 20:15:56
+  from 'C:\xampp\htdocs\projekt\app\views\ManageUsersView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_60c13fd0104738_50202524',
+  'unifunc' => 'content_60ca3fdc14edc9_57550215',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'd564cd899abbadf1d28392dfd02fa16d64851ad6' => 
+    '149a5264806780f285871522d4b4d417722b8456' => 
     array (
-      0 => 'G:\\xampp\\htdocs\\projekt\\app\\views\\ManageUsersView.tpl',
-      1 => 1593785236,
+      0 => 'C:\\xampp\\htdocs\\projekt\\app\\views\\ManageUsersView.tpl',
+      1 => 1623867303,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60c13fd0104738_50202524 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60ca3fdc14edc9_57550215 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_121349512260c13fcfd88313_08646531', 'intro');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13903464860ca3fdc13a357_24001737', 'intro');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
 }
 /* {block 'intro'} */
-class Block_121349512260c13fcfd88313_08646531 extends Smarty_Internal_Block
+class Block_13903464860ca3fdc13a357_24001737 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'intro' => 
   array (
-    0 => 'Block_121349512260c13fcfd88313_08646531',
+    0 => 'Block_13903464860ca3fdc13a357_24001737',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -134,7 +134,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['user']->value) {
 </td>
                         <td>
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" name="l<?php echo $_smarty_tpl->tpl_vars['user']->value['id'];?>
+">
                                     <span class="caret"></span></button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
@@ -143,7 +144,8 @@ manageUsers/<?php echo $_smarty_tpl->tpl_vars['offset']->value;?>
 ">Edytuj</a></li>
                                     <?php if (core\RoleUtils::inRole("admin")) {?>
                                         <li><a class="dropdown-item" onclick="deleteUser('<?php echo $_smarty_tpl->tpl_vars['user']->value['id'];?>
-')" href="#">Usuń</a></li>
+')" name="u<?php echo $_smarty_tpl->tpl_vars['user']->value['id'];?>
+" href="#">Usuń</a></li>
                                     <?php }?>
                                 </ul>
                             </div>

@@ -60,12 +60,12 @@
                         <td>{$user['name']}</td>
                         <td>
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" name="l{$user['id']}">
                                     <span class="caret"></span></button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="{$conf->action_root}manageUsers/{$offset}/edit/{$user['id']}">Edytuj</a></li>
                                     {if core\RoleUtils::inRole("admin")}
-                                        <li><a class="dropdown-item" onclick="deleteUser('{$user['id']}')" href="#">Usuń</a></li>
+                                        <li><a class="dropdown-item" onclick="deleteUser('{$user['id']}')" name="u{$user['id']}" href="#">Usuń</a></li>
                                     {/if}
                                 </ul>
                             </div>
